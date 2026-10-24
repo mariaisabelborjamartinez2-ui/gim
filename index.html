@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitZone Gimnasio: planes de membresía, clases grupales y herramientas para alcanzar tus metas fitness.">
+  <title>FitZone Gimnasio | Transforma tu energía</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">✦</span>
+      <span>Fit<span class="pink">Zone</span>
+        <small>G I M N A S I O</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#planes">Planes</a>
+      <a href="#clases">Clases</a>
+      <a href="#imc">Calculadora IMC</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn btn-primary header-btn" href="#planes">Únete ahora ↗</a>
+  </header>
+
+  <main>
+
+    <!-- INICIO / BANNER PRINCIPAL -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">⚡ SUPERA TUS LÍMITES</span>
+        <h1>Tu mejor versión<br>comienza en <span>FitZone.</span></h1>
+        <p>
+          No entrenes solamente para cambiar tu cuerpo.
+          Entrena para transformar tu vida.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#planes" class="btn btn-primary">Únete ahora ↗</a>
+          <a href="#clases" class="btn btn-outline">Explorar clases ↓</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>+500</strong><span>Metas por alcanzar</span></div>
+          <div><strong>4</strong><span>Clases grupales</span></div>
+          <div><strong>100%</strong><span>Energía positiva</span></div>
+        </div>
+      </div>
+
+      <div class="hero-label">
+        <span>01 / TU CAMBIO EMPIEZA HOY</span>
+        <strong>FUERTE. ACTIVO. IMPARABLE.</strong>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits section">
+      <div class="benefit">
+        <span class="benefit-icon">🏋️</span>
+        <div><h3>Equipos modernos</h3><p>Entrena con comodidad y seguridad.</p></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">⚡</span>
+        <div><h3>Entrenadores expertos</h3><p>Orientación para alcanzar tus metas.</p></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">❤️</span>
+        <div><h3>Comunidad FitZone</h3><p>Motivación en cada entrenamiento.</p></div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section plans-section" id="planes">
+      <div class="section-heading">
+        <span class="eyebrow">ENCUENTRA TU PLAN</span>
+        <h2>Invierte en <span>ti mismo</span></h2>
+        <p>Elige la membresía que se adapte a tus objetivos.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <article class="plan-card">
+          <div class="plan-symbol">⚡</div>
+          <h3>Básico</h3>
+          <p class="plan-description">Tu primer paso hacia una vida activa.</p>
+          <div class="price">$70.000 <small>/mes</small></div>
+          <ul>
+            <li>✓ Acceso a sala de pesas</li>
+            <li>✓ Equipos de cardio</li>
+            <li>✓ Vestidores y duchas</li>
+            <li>✓ 1 clase grupal por semana</li>
+          </ul>
+          <a class="btn btn-plan" href="#contacto" data-plan="Básico">Elegir Básico</a>
+        </article>
+
+        <article class="plan-card featured">
+          <span class="popular-tag">MÁS POPULAR</span>
+          <div class="plan-symbol">🔥</div>
+          <h3>Premium</h3>
+          <p class="plan-description">Más variedad para superar tus metas.</p>
+          <div class="price">$100.000 <small>/mes</small></div>
+          <ul>
+            <li>✓ Todo lo del plan Básico</li>
+            <li>✓ Clases grupales ilimitadas</li>
+            <li>✓ Entrenamiento funcional</li>
+            <li>✓ Rutina personalizada</li>
+            <li>✓ Asesoría nutricional básica</li>
+          </ul>
+          <a class="btn btn-primary btn-plan" href="#contacto" data-plan="Premium">Elegir Premium</a>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-symbol">👑</div>
+          <h3>VIP</h3>
+          <p class="plan-description">Una experiencia fitness exclusiva.</p>
+          <div class="price">$140.000 <small>/mes</small></div>
+          <ul>
+            <li>✓ Todo lo del plan Premium</li>
+            <li>✓ Entrenador personal</li>
+            <li>✓ Evaluación física mensual</li>
+            <li>✓ Zona de recuperación</li>
+            <li>✓ Seguimiento de objetivos</li>
+          </ul>
+          <a class="btn btn-plan" href="#contacto" data-plan="VIP">Elegir VIP</a>
+        </article>
+
+      </div>
+      <p class="small-note">*Precios ilustrativos en pesos colombianos. Consulta condiciones y disponibilidad.</p>
+    </section>
+
+    <!-- HORARIO DE CLASES -->
+    <section class="section classes-section" id="clases">
+      <div class="section-heading">
+        <span class="eyebrow">MUÉVETE A TU RITMO</span>
+        <h2>Horarios de <span>clases</span></h2>
+        <p>Organiza tu semana y encuentra tu entrenamiento favorito.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Horario</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>6:00 - 7:00</th>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+            </tr>
+            <tr>
+              <th>7:00 - 8:00</th>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class functional">Funcional</span></td>
+            </tr>
+            <tr>
+              <th>8:00 - 9:00</th>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class boxing">Boxeo</span></td>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class boxing">Boxeo</span></td>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+            </tr>
+            <tr>
+              <th>17:00 - 18:00</th>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class boxing">Boxeo</span></td>
+              <td><span class="class functional">Funcional</span></td>
+            </tr>
+            <tr>
+              <th>18:00 - 19:00</th>
+              <td><span class="class boxing">Boxeo</span></td>
+              <td><span class="class functional">Funcional</span></td>
+              <td><span class="class boxing">Boxeo</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+              <td><span class="class spinning">Spinning</span></td>
+              <td><span class="class yoga">Yoga</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="class-legend">
+        <span><i class="dot dot-yoga"></i> Yoga</span>
+        <span><i class="dot dot-spinning"></i> Spinning</span>
+        <span><i class="dot dot-functional"></i> Funcional</span>
+        <span><i class="dot dot-boxing"></i> Boxeo</span>
+      </div>
+      <p class="small-note">*Horario de ejemplo, sujeto a cambios según disponibilidad de instructores.</p>
+    </section>
+
+    <!-- CALCULADORA IMC -->
+    <section class="section imc-section" id="imc">
+      <div class="imc-info">
+        <span class="eyebrow">CONOCE TU CUERPO</span>
+        <h2>Tu bienestar,<br>en <span>números.</span></h2>
+        <p>
+          Calcula tu índice de masa corporal (IMC) usando tu peso
+          y estatura. Obtén una clasificación orientativa en segundos.
+        </p>
+        <div class="imc-tip">
+          <span>💡</span>
+          <p>El IMC es una referencia general. No mide directamente la grasa corporal ni sustituye una evaluación profesional.</p>
+        </div>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calculator-title">
+          <span class="calculator-icon">＋</span>
+          <div><h3>Calculadora IMC</h3><p>Introduce tus datos</p></div>
+        </div>
+
+        <form id="imcForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="peso">Peso (kg)</label>
+              <input type="number" id="peso" name="peso"
+                placeholder="Ej. 70" min="1" max="500"
+                step="any" required>
+            </div>
+            <div class="form-group">
+              <label for="estatura">Estatura (cm)</label>
+              <input type="number" id="estatura" name="estatura"
+                placeholder="Ej. 170" min="50" max="250"
+                step="any" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary calculate-btn">
+            Calcular mi IMC ↗
+          </button>
+          <button type="reset" class="reset-btn">Limpiar datos</button>
+          <p class="form-message" id="formMessage" role="alert"></p>
+        </form>
+
+        <div class="imc-result" id="imcResult" aria-live="polite">
+          <span class="result-icon">◎</span>
+          <div>
+            <span class="result-label">TU RESULTADO</span>
+            <h3>Esperando tus datos</h3>
+            <p>Completa el formulario para ver tu resultado.</p>
+          </div>
+        </div>
+
+        <h4 class="classification-title">Clasificación orientativa del IMC en adultos</h4>
+        <div class="imc-ranges">
+          <div class="range range-low"><strong>Bajo peso</strong><span>&lt; 18,5</span></div>
+          <div class="range range-normal"><strong>Normal</strong><span>18,5 - 24,9</span></div>
+          <div class="range range-over"><strong>Sobrepeso</strong><span>25 - 29,9</span></div>
+          <div class="range range-high"><strong>Obesidad</strong><span>≥ 30</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section testimonials-section" id="testimonios">
+      <div class="section-heading">
+        <span class="eyebrow">HISTORIAS QUE INSPIRAN</span>
+        <h2>La energía de nuestra <span>comunidad</span></h2>
+        <p>Personas que dieron el primer paso y siguen avanzando.</p>
+      </div>
+
+      <div class="testimonial-carousel">
+        <button type="button" class="carousel-btn" id="prevTestimonial"
+          aria-label="Testimonio anterior">‹</button>
+
+        <article class="testimonial-card" aria-live="polite">
+          <div class="testimonial-avatar" id="testimonialAvatar">👩🏻</div>
+          <div class="testimonial-content">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote id="testimonialQuote">
+              “Desde que empecé a entrenar me siento con más energía y confianza.”
+            </blockquote>
+            <h3 id="testimonialName">Laura Gómez</h3>
+            <p id="testimonialPlan">Socia Premium</p>
+          </div>
+        </article>
+
+        <button type="button" class="carousel-btn" id="nextTestimonial"
+          aria-label="Testimonio siguiente">›</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-label="Elegir testimonio"></div>
+      <p class="small-note">*Testimonios de ejemplo para la demostración del sitio.</p>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="join-banner">
+      <div>
+        <span class="eyebrow">TU MOMENTO ES AHORA</span>
+        <h2>El cambio comienza con una decisión.</h2>
+        <p>Da el primer paso. Nosotros te acompañamos.</p>
+      </div>
+      <a href="#contacto" class="btn btn-light">Quiero unirme ↗</a>
+    </section>
+
+  </main>
+
+  <!-- CONTACTO Y PIE DE PÁGINA -->
+  <footer class="footer" id="contacto">
+    <div class="footer-main">
+      <a href="#inicio" class="logo footer-logo">
+        <span class="logo-icon">✦</span>
+        <span>Fit<span class="pink">Zone</span><small>G I M N A S I O</small></span>
+      </a>
+
+      <div>
+        <h3>Encuéntranos</h3>
+        <p>📍 Calle 10 # 5-20, Canalete, Córdoba</p>
+        <p>🕒 Lunes a viernes: 5:00 a. m. - 9:00 p. m.</p>
+        <p>🕒 Sábados: 6:00 a. m. - 6:00 p. m.</p>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p>📞 312 602 0219</p>
+        <a class="footer-link"
+          href="https://wa.me/573126020219?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20FitZone"
+          target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> FitZone Gimnasio. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+</body>
+</html>
